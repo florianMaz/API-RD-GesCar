@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const app = new Koa();
+const test = require('./routes/cars');
 
 // response
 app.use(ctx => {
@@ -7,3 +8,4 @@ app.use(ctx => {
 });
 
 app.listen(3000);
+console.log('listen on port 3000');
