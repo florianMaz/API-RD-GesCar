@@ -1,0 +1,25 @@
+Permettre aux etudiants d'apprehender les concepts inehrants aux developpment serveur via des
+technologies NodeJS. Les etudiants devront faire preuve d'une capacite de reflexion et d'analyse lors du
+choix des framework et outils lors de la conception de leur projet.
+Par groupe de deux ou de facon individuel, proposez, implementez et justifiez le sujet developpe en cours
+via des technologies differentes. Ce qui signifie :
+
+ - Pas d'express,
+
+ - Pas de Mongoose,
+
+ - Pas de Travis,
+
+ - Pas d'Heroku
+
+L'objectif de votre presentation sera de mettre en avant vos justifications, par la demonstration du code
+qui aura ete implemente, l'utilisation des routes pre-ecrites dans POSTMAN pour valider la partie
+fonctionelle, ainsi qu'une etude de chacune des technologies choisies.
+
+Vous serez evaluer de la facon suivante :
+
+ - 10 points pour la presentation oral, basee sur la justification de vos choix
+
+ - 5 points sur le respect des regles fonctionelles
+
+ - 5 points sur la qualite du code et le respect des responsabilites architecturales vu en cours.
