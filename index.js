@@ -1,24 +1,30 @@
 const Koa = require('koa');
-const bodyParser = require('koa-bodyparser');
-const logger = require('koa-logger');
-const Router = require('koa-router');
-const app = new Koa();
+//const Router = require('koa-router');
+const BodyParser = require('koa-bodyparser');
 const router = require('./routes');
 
-//const http = require('http');
+const app = new Koa();
+//const router = new Router();
 
-require('./routes');
+app.use(BodyParser());
 
-
-// response
-app.use(ctx => {
-    ctx.body = 'Hello Koa';
+/*router.get("/", async function (ctx){
+  ctx.body = {message: "Ta race"}
 });
 
-app.use(bodyParser());
-app.use(responseTime());
-app.use(router.routes()).use(router.allowedMethods());
+router.post("/", async function (ctx){
+  let name = ctx.request.body.name || "World";
+  ctx.body = {message: `Hello ${name}!`}
+});
+*/
+
+app
+    .use(router.allowedMethods())
+    .use(router.routes());
+
+app.listen(3000);
+console.log("Running on port 3000");
 
 module.exports = app;
-//http.createServer(app.callback()).listen(3000);
-console.log('listening on port 3000');
+
+//app.listen(3000);

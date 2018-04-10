@@ -4,9 +4,12 @@
   "description": "Permettre aux etudiants d'apprehender les concepts inehrants aux developpment serveur via des\r technologies NodeJS. Les etudiants devront faire preuve d'une capacite de reflexion et d'analyse lors du\r choix des framework et outils lors de la conception de leur projet.\r Par groupe de deux ou de facon individuel, proposez, implementez et justifiez le sujet developpe en cours\r via des technologies differentes. Ce qui signifie :",
   "main": "index.js",
   "dependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
     "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
     "koa-logger": "^3.2.0",
+    "koa-response-time": "^2.0.0",
     "koa-router": "^7.4.0"
   },
   "devDependencies": {},

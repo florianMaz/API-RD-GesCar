@@ -1,6 +1,6 @@
 const router = require('koa-router')();
-const carsRoutes = require('./cars.js');
+const carsRoutes = require('./cars');
 
-router.use('/', carsRoutes);
+router.use('/cars', carsRoutes);
 
 module.exports = router;
