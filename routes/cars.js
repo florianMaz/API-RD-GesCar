@@ -1,22 +1,9 @@
-const Koa = require('koa');
-const Router = require('koa-router');
+const router = require('koa-router')();
 
-const app = new Koa();
-const router = new Router();
+async function getCars(ctx){
+    ctx.body = {"mark" : "BMW"};
+}
 
-router.get('/', (ctx, next) => {
-    ctx.body = 'get list cars';
-    console.log(ctx.body);
-    })
-    .post('/cars', (ctx, next) => {
-        // add cars
-    })
-    .put('/cars/:id', (ctx, next) => {
-        // modif cars
-    })
-    .del('/cars/:id', (ctx, next) => {
-        // remove cars
-    });
+router.get('/', getCars);
 
-app.use(router.routes())
-    .use(router.allowedMethods());
+module.exports = router.routes();
